@@ -2,7 +2,7 @@ $(function() {
   
     rotateImages();
     $("#menu").load("menu.html");
-    
+
 });
 
 
