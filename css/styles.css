@@ -1,0 +1,30 @@
+body{
+background: #2c0203; /* Old browsers */
+
+background: linear-gradient(  #2c0203 0%,#600902 50%,#600902 50%,#f16f01 100%); /* W3C */
+background-repeat: no-repeat;
+height: 100%;
+   color: white;
+   
+
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word !important;
+  font-family: 'roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: red;
+}
+#main{
+	 margin: 0 auto;
+	 width:70%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
