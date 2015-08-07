@@ -1,7 +1,7 @@
 $(function() {
   
     rotateImages();
-    $("#menu").load("menu.html");
+    $("#menu").load("menuNav.html");
 
 });
 

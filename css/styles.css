@@ -3,7 +3,9 @@ background: #2c0203; /* Old browsers */
 
 background: linear-gradient(  #2c0203 0%,#600902 50%,#600902 50%,#f16f01 100%); /* W3C */
 background-repeat: no-repeat;
-height: 100%;
+ height:auto;
+ overflow: auto;
+
    color: white;
    
 
@@ -22,9 +24,53 @@ a{
 #main{
 	 margin: 0 auto;
 	 width:70%;
+	 margin-bottom: 300px;
+}
+#mainRestaurant{
+	 margin: 0 auto;
+	 width:70%;
+	 margin-bottom: 600px;
 }
 
 img {
   width: 100%;
   height: auto;
 }
+
+.menuImg{
+	 width: 400px;
+	 height: auto;
+	 display: block;
+	 float: left;
+}
+.textoComida{
+	width: 400px;
+	 height: auto;
+	 display: block;
+	  float: left;
+}
+section{
+	style="clear:both;
+}
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 920px) {
+.menuImg{
+	 width: 50%;
+	 height: auto;
+	 display: block;
+	/* float: left;*/
+}
+
+
+
+
+}
+
+
+
+
+
+
+
