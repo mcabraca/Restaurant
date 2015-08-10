@@ -32,40 +32,47 @@ a{
 	 margin-bottom: 600px;
 }
 
-img {
+#mainImage{
   width: 100%;
   height: auto;
 }
 
-.menuImg{
-	 width: 400px;
+.menuImg, .textoComida{
 	 height: auto;
 	 display: block;
 	 float: left;
 }
-.textoComida{
-	width: 400px;
-	 height: auto;
-	 display: block;
-	  float: left;
-}
-section{
-	style="clear:both;
+.menuImg{
+	width: 60%;
+	}
+	.textoComida{
+		width: 39%;
+		text-align: center;
+		padding-left: 1%;
+	}
+
+section {
+	clear:both;
 }
 /* Media Queries
 --------------------------------------------- */
 
 @media all and (max-width : 920px) {
-.menuImg{
-	 width: 50%;
+.menuImg, .textoComida{
 	 height: auto;
-	 display: block;
-	/* float: left;*/
+/*	 width: 50%;*/
+     font-size:15px;
+}
 }
 
+@media all and (max-width : 640px) {
+.menuImg, .textoComida{
+	 height: auto;
+	 width: 100%;
+	 padding-left: 0px;
+	 padding-top: 10px;
 
-
-
+}
 }
 
 
