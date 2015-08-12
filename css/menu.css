@@ -47,7 +47,7 @@ nav a {
   display: block;
   padding: 0 20px;
   color: #FFF;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 60px;
   text-decoration: none;
 }
@@ -68,13 +68,14 @@ nav ul ul li {
   width: 170px;
   float: none;
   display: list-item;
-  position: relative;
-}
+  position: relative; 
+  }
 
 nav ul ul ul li {
   position: relative;
   top: -60px;
   left: 170px;
+
 }
 
 li > a:after { content: ' +'; }

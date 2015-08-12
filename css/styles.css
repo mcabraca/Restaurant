@@ -3,7 +3,7 @@ background: #2c0203; /* Old browsers */
 
 background: linear-gradient(  #2c0203 0%,#600902 50%,#600902 50%,#f16f01 100%); /* W3C */
 background-repeat: no-repeat;
- height:auto;
+ height:1000px;
  overflow: auto;
 
    color: white;
@@ -24,12 +24,7 @@ a{
 #main{
 	 margin: 0 auto;
 	 width:70%;
-	 margin-bottom: 300px;
-}
-#mainRestaurant{
-	 margin: 0 auto;
-	 width:70%;
-	 margin-bottom: 600px;
+
 }
 
 #mainImage{
@@ -39,7 +34,7 @@ a{
 #mainReservacion{
 	 margin: 0 auto;
 	 width:70%;
-	 margin-bottom: 300px;
+	
 	 text-align:left;
 }
 #mainReservacion p{
@@ -64,6 +59,27 @@ a{
 section {
 	clear:both;
 }
+
+div.ui-datepicker{
+ font-size:10px;
+}
+.ui-datepicker-week-end, .ui-datepicker-week-end ~ th{
+	color:#000000;
+}
+
+#mainReservacion span{
+	width: 400px;
+}
+input[type=number]{
+	width: 40px;
+}
+#txtNombre{
+	width: 200px;
+}
+td{
+	width:200px;
+}
+
 /* Media Queries
 --------------------------------------------- */
 
@@ -72,6 +88,9 @@ section {
 	 height: auto;
 /*	 width: 50%;*/
      font-size:15px;
+}
+body{
+	height: 1800px;
 }
 }
 
@@ -82,6 +101,9 @@ section {
 	 padding-left: 0px;
 	 padding-top: 10px;
 
+}
+#txtComment{
+	width: 200px;
 }
 }
 

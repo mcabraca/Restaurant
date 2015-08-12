@@ -1,17 +1,18 @@
-<meta charset="utf-8">
+<!DOCTYPE html>
+
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Restaurant Site</title>
 		<meta name="description" content="">
 		<meta name="author" content="Marlon">
-
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" type="text/css" href="css/menu.css">
 		<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css">
 		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="js/jquery.timepicker.min.js"></script>
@@ -29,22 +30,104 @@
 				Para su comodidad el restaurante La Prueba, le ofrecemos la opción de reservación, con las siguientes opciones:
 			</p>
 			<p>
+				Nombre completo:
+			</p>
+			<input type="text" id="txtNombre" name="nombre">
+			<br>
+			<p>
 				Fecha:
 			</p>
 			<input type="text" id="datepicker" name="fecha">
-
+			<br>
 			<p>
 				Hora:
 			</p>
-            <input type="text" value="01:30 PM" id="timepicker" style="width: 70px" >
+			<input type="text" value="01:30 PM" id="timepicker" style="width: 70px" >
+			<br>
 			<p>
-				Consumo:
+				Número de personas:
 			</p>
 
+			<input type="number" />
+			<form action="">
+				<table>
+					<tr>
+						<th>Platillo</th>
+						<th>Cantidad</th>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx1" type="checkbox" value="Pinto">
+						Pinto </td>
+						<td>
+						<input id="input1" type="number" disabled="true"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx2" type="checkbox" value="Arroz">
+						Arroz con pollo </td>
+						<td>
+						<input id="input2" type="number"  />
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx3"  type="checkbox" value="Casado">
+						Casado </td>
+						<td>
+						<input id="input3" type="number"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx4" type="checkbox" value="Hamburguesa">
+						Hamburguesa </td>
+						<td>
+						<input id="input4" type="number"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx5" type="checkbox" value="Tacos">
+						Tacos </td>
+						<td>
+						<input id="input5" type="number"  />
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx6" type="checkbox" value="Burrito">
+						Burrito carne </td>
+						<td>
+						<input id="input6" type="number"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<input id="cbx7" type="checkbox" value="Burrito`2">
+						Burrito pollo</td>
+						<td>
+						<input id="input7" type="number"/>
+						</td>
+					</tr>
+				</table>
+
+				<p>
+					Si desea agregar algún comentario sobre los platillos solicitados o la reservación puede hacerlo en el siguiente campo:
+				</p>
+				<textarea  id="txtComment" cols="50" rows="5" tabindex="4">
+	
+</textarea>
+				<br>
+
+				<input type="button" value="Enviar reservación">
+
+			</form>
 		</div>
 
 		<footer>
-			menu fo
+
 		</footer>
 
 	</body>
