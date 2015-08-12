@@ -2,12 +2,19 @@ $(function() {
   
     rotateImages();
     $("#menu").load("menuNav.html");
-
+    $( "#datepicker" ).datepicker({ minDate: 0, maxDate: "+1M +0D" });
+$('#timepicker').timepicker({
+    'disableTimeRanges': [
+        ['12am', '10am'],
+        ['9pm', '11:31pm']
+    ]
 });
 
 
 
 
+
+});
 
 
 

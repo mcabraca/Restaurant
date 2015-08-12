@@ -36,6 +36,16 @@ a{
   width: 100%;
   height: auto;
 }
+#mainReservacion{
+	 margin: 0 auto;
+	 width:70%;
+	 margin-bottom: 300px;
+	 text-align:left;
+}
+#mainReservacion p{
+	text-align:left;
+}
+
 
 .menuImg, .textoComida{
 	 height: auto;

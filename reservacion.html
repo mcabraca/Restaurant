@@ -9,7 +9,12 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css">
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="js/jquery.timepicker.min.js"></script>
 		<script src="js/script.js"></script>
 	</head>
 
@@ -19,8 +24,23 @@
 			<nav id="menu"></nav>
 		</header>
 
-		<div id="main">
-		Reserve aqui
+		<div id="mainReservacion">
+			<p>
+				Para su comodidad el restaurante La Prueba, le ofrecemos la opción de reservación, con las siguientes opciones:
+			</p>
+			<p>
+				Fecha:
+			</p>
+			<input type="text" id="datepicker" name="fecha">
+
+			<p>
+				Hora:
+			</p>
+            <input type="text" value="01:30 PM" id="timepicker" style="width: 70px" >
+			<p>
+				Consumo:
+			</p>
+
 		</div>
 
 		<footer>
