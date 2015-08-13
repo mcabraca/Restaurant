@@ -14,6 +14,7 @@ $(function() {
     {
         var nextCell = $(this).closest('td').next().find('input');
          nextCell.removeAttr("disabled"); 
+         nextCell.val("1");
       
     }
     //If checkbox is unchecked then disable or enable input

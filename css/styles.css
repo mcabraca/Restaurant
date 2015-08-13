@@ -1,116 +1,169 @@
-body{
-background: #2c0203; /* Old browsers */
-
-background: linear-gradient(  #2c0203 0%,#600902 50%,#600902 50%,#f16f01 100%); /* W3C */
-background-repeat: no-repeat;
- height:1000px;
- overflow: auto;
-
-   color: white;
-   
-
-  font-size: 22px;
-  line-height: 32px;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word !important;
-  font-family: 'roboto', sans-serif;
+body {
+	background: #2c0203; /* Old browsers */
+	background: linear-gradient(  #2c0203 0%,#600902 50%,#600902 50%,#f16f01 100%); /* W3C */
+	background-repeat: no-repeat;
+	min-height: 100%;
+	position: relative;
+	font-size: 22px;
+	line-height: 32px;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	word-wrap: break-word !important;
+	font-family: 'roboto', sans-serif;
 }
-a{
+a {
 	text-decoration: none;
 	color: red;
 }
-#main{
-	 margin: 0 auto;
-	 width:70%;
-
+#main, #mainReservacion, #mainContacto {
+	margin: 0 auto;
+	width: 70%;
+	height: 100vh;
 }
 
-#mainImage{
-  width: 100%;
-  height: auto;
-}
-#mainReservacion{
-	 margin: 0 auto;
-	 width:70%;
-	
-	 text-align:left;
-}
-#mainReservacion p{
-	text-align:left;
+#mainImage {
+	width: 100%;
+	height: auto;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+	border: 0px solid #000000;
+	margin-top:30px;
+	  
 }
 
-
-.menuImg, .textoComida{
-	 height: auto;
-	 display: block;
-	 float: left;
+#mainReservacion p, #mainContacto p {
+	text-align: left;
 }
-.menuImg{
+
+.menuImg, .textoComida {
+	height: auto;
+	display: block;
+	float: left;
+}
+.menuImg {
 	width: 60%;
-	}
-	.textoComida{
-		width: 39%;
-		text-align: center;
-		padding-left: 1%;
-	}
+}
+.textoComida {
+	width: 39%;
+	text-align: center;
+	padding-left: 1%;
+}
 
 section {
-	clear:both;
+	clear: both;
 }
 
-div.ui-datepicker{
- font-size:10px;
+div.ui-datepicker {
+	font-size: 10px;
 }
-.ui-datepicker-week-end, .ui-datepicker-week-end ~ th{
-	color:#000000;
+.ui-datepicker-week-end, .ui-datepicker-week-end ~
+th {
+	color: #000000;
 }
 
-#mainReservacion span{
+#mainReservacion span {
 	width: 400px;
 }
-input[type=number]{
+input[type=number] {
 	width: 40px;
 }
-#txtNombre{
+
+input, textarea {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 0px solid #000000;
+	padding: 3px;
+}
+
+
+
+
+#txtNombre {
 	width: 200px;
 }
-td{
-	width:200px;
+td {
+	width: 200px;
+}
+#cuadro {
+	background-color: white;
+	opacity: 0.25;
+	color: red;
+	width: 98%;
+	height: auto;
+-webkit-border-bottom-right-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-bottomright: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+	border: 0px solid #000000;
+	padding: 1%;
+	    box-shadow: 10px 10px 5px #560802;
+}
+.contactCaptcha {
+	width: 25px;
+	float: left;
+	padding: 5px;
+}
+#submit, #status {
+	clear: both;
+	float: left;
+}
+#answer{
+	width: 35px;
+	height: 20px;
+	margin-top:5px;
+	font-size:20px;
+}
+iframe{
+	width: 50%;
+	height: auto;
 }
 
 
 /* Media Queries
---------------------------------------------- */
+ --------------------------------------------- */
 
-@media all and (max-width : 920px) {
-.menuImg, .textoComida{
-	 height: auto;
-/*	 width: 50%;*/
-     font-size:15px;
-}
-body{
-	height: 1800px;
-}
-}
-
-@media all and (max-width : 640px) {
-.menuImg, .textoComida{
-	 height: auto;
-	 width: 100%;
-	 padding-left: 0px;
-	 padding-top: 10px;
-
-}
-#txtComment{
-	width: 200px;
-}
+@media all and (max-width: 920px) {
+	.menuImg, .textoComida {
+		height: auto;
+		/*	 width: 50%;*/
+		font-size: 15px;
+	}
+	#main, #mainReservacion, #mainContacto {
+		height: 100vh;
+	}
+	#mainContent {
+		height: 100vh;
+	}
 }
 
-
-
-
-
-
+@media all and (max-width: 640px) {
+	.menuImg, .textoComida {
+		height: auto;
+		width: 100%;
+		padding-left: 0px;
+		padding-top: 10px;
+	}
+	#txtComment {
+		width: 200px;
+	}
+	#mainContent {
+		height: 100vh;
+	}
+	}
+@media all and (max-width: 480px) {
+	#mainContent {
+		height: 440px;
+	}
+	#mainReservacion{
+		height: 1350px;
+	}
+}
 
