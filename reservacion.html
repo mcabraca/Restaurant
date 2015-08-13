@@ -13,10 +13,13 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="js/jquery.timepicker.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/reservationScript.js"></script>
+		<script>
+		$(function() {$("#menu").load("menuNav.html");});	
+		</script>
 	</head>
 
 	<body>
@@ -27,7 +30,7 @@
 
 		<div id="mainReservacion">
 			<p>
-				Para su comodidad el restaurante La Prueba, le ofrecemos la opción de reservación, con las siguientes opciones:
+				Para su comodidad en el restaurante  La Casa de las Delicias, le ofrecemos la opción de reservación, con las siguientes opciones:
 			</p>
 			<p>
 				Nombre completo:
@@ -48,7 +51,7 @@
 				Número de personas:
 			</p>
 
-			<input type="number" />
+			<input type="number" min="1" />
 			<form action="">
 				<table>
 					<tr>
@@ -60,7 +63,7 @@
 						<input id="cbx1" type="checkbox" value="Pinto">
 						Pinto </td>
 						<td>
-						<input id="input1" type="number" disabled="true"/>
+						<input id="input1" min="1" disabled type="number"/>
 						</td>
 					</tr>
 					<tr>
@@ -68,7 +71,7 @@
 						<input id="cbx2" type="checkbox" value="Arroz">
 						Arroz con pollo </td>
 						<td>
-						<input id="input2" type="number"  />
+						<input id="input2" min="1"disabled type="number" />
 						</td>
 					</tr>
 					<tr>
@@ -76,7 +79,7 @@
 						<input id="cbx3"  type="checkbox" value="Casado">
 						Casado </td>
 						<td>
-						<input id="input3" type="number"/>
+						<input id="input3" min="1" disabled  type="number"/>
 						</td>
 					</tr>
 					<tr>
@@ -84,7 +87,7 @@
 						<input id="cbx4" type="checkbox" value="Hamburguesa">
 						Hamburguesa </td>
 						<td>
-						<input id="input4" type="number"/>
+						<input id="input4" min="1" disabled="" type="number"/>
 						</td>
 					</tr>
 					<tr>
@@ -92,7 +95,7 @@
 						<input id="cbx5" type="checkbox" value="Tacos">
 						Tacos </td>
 						<td>
-						<input id="input5" type="number"  />
+						<input id="input5" min="1" disabled="" type="number"  />
 						</td>
 					</tr>
 					<tr>
@@ -100,7 +103,7 @@
 						<input id="cbx6" type="checkbox" value="Burrito">
 						Burrito carne </td>
 						<td>
-						<input id="input6" type="number"/>
+						<input id="input6" min="1" disabled type="number"/>
 						</td>
 					</tr>
 					<tr>
@@ -108,7 +111,7 @@
 						<input id="cbx7" type="checkbox" value="Burrito`2">
 						Burrito pollo</td>
 						<td>
-						<input id="input7" type="number"/>
+						<input id="input7" min="1" disabled type="number"/>
 						</td>
 					</tr>
 				</table>
