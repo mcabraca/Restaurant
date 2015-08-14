@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Sevillana);
+@font-face {
+    font-family:"Josefin";
+    src: url("JosefinSans-Regular.ttf") /* TTF file for CSS3 browsers */
+}
 body {
 	background: #2c0203; /* Old browsers */
 	background: linear-gradient(  #2c0203 0%,#600902 50%,#600902 50%,#f16f01 100%); /* W3C */
@@ -10,18 +15,22 @@ body {
 	margin: 0;
 	padding: 0;
 	word-wrap: break-word !important;
-	font-family: 'roboto', sans-serif;
+	font-family: 'Josefin', sans-serif;
 }
 a {
 	text-decoration: none;
 	color: red;
 }
-#main, #mainReservacion, #mainContacto {
+#main, #mainContacto {
 	margin: 0 auto;
 	width: 70%;
 	height: 100vh;
 }
-
+#mainReservacion{
+	margin: 0 auto;
+	width: 70%;
+	height:1000px;
+}
 #mainImage {
 	width: 100%;
 	height: auto;
@@ -44,14 +53,26 @@ border-top-right-radius: 10px;
 	height: auto;
 	display: block;
 	float: left;
-}
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+   }
+   .textoComida{
+   	font-family:
+   }
+   
 .menuImg {
 	width: 60%;
+	 margin: 10px 0px;
 }
 .textoComida {
 	width: 39%;
 	text-align: center;
 	padding-left: 1%;
+}
+.nombreComida{
+	font-weight: bold;
+	text-align: left;
 }
 
 section {
@@ -72,7 +93,9 @@ th {
 input[type=number] {
 	width: 40px;
 }
-
+input[type=email] {
+	width: 200px;
+}
 input, textarea {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -125,18 +148,34 @@ iframe{
 	width: 50%;
 	height: auto;
 }
-
-
+#nombreMenu, h2{
+	font-family: 'Sevillana', cursive;
+	font-size:26px;
+}
+#space{
+	clear: both;
+	height: 40px;
+}
+footer{
+	margin-top: 16px;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+	height: 36px;
+	background-color: #f16f01;
+	}
+	#menufooter{
+		margin-top: 1900px;
+	}
 /* Media Queries
  --------------------------------------------- */
 
 @media all and (max-width: 920px) {
 	.menuImg, .textoComida {
 		height: auto;
-		/*	 width: 50%;*/
-		font-size: 15px;
+		font-size: 17px;
 	}
-	#main, #mainReservacion, #mainContacto {
+	#main, #mainReservacion #mainContacto {
 		height: 100vh;
 	}
 	#mainContent {
@@ -151,6 +190,9 @@ iframe{
 		padding-left: 0px;
 		padding-top: 10px;
 	}
+	#mainReservacion{
+		height: 1350px;
+	}
 	#txtComment {
 		width: 200px;
 	}
@@ -164,6 +206,12 @@ iframe{
 	}
 	#mainReservacion{
 		height: 1350px;
+	}
+	#mainContacto{
+		height: 650px;
+	}
+	#menufooter{
+		margin-top: 2200px;
 	}
 }
 

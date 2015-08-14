@@ -1,8 +1,10 @@
 $(function() {
 randomNums();
-$( "#submit" ).click(function() {
-  addNums();
-});
+$( "#submit" ).click(function(e) {
+  e.preventDefault();
+  addNums();  
+  });
+
 });
 
 function addNums(){
@@ -29,6 +31,9 @@ function addNums(){
 		document.getElementById("status").innerHTML = "Su mensaje ha sido enviado, muchas gracias por su interés";
 
 		document.getElementById("answer").value = "";
+		document.getElementById("txtNombre").value = " ";
+		document.getElementById("email").value = " ";
+		document.getElementById("txtComment").value = " ";
 
 	}
 

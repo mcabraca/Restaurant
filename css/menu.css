@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=roboto);
-
+@import url(http://fonts.googleapis.com/css?family=Sevillana);
 
 p { text-align: center; }
  .toggle, [id^=drop] {
@@ -20,7 +20,13 @@ nav {
   font-size: 20px;
   line-height: 60px;
 }
-
+#logo *{
+	float:left;
+}
+#logoMenu{
+	height: 60px;
+	width: auto;
+}
 nav:after {
   content: "";
   display: table;
@@ -50,6 +56,7 @@ nav a {
   font-size: 18px;
   line-height: 60px;
   text-decoration: none;
+
 }
 
 nav ul li ul li:hover { background: #670E02; }
@@ -100,8 +107,8 @@ li > a:only-child:after { content: ''; }
   display: block;
   padding: 0;
   width: 100%;
-  text-align: center;
   float: none;
+  height: 60px;
 }
 
 nav { margin: 0; }
