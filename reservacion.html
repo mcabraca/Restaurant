@@ -29,19 +29,19 @@
 		</header>
 
 		<div id="mainReservacion">
-			
+				<form>
 			<p>
 				Para su comodidad en el restaurante  La Casa de las Delicias, le ofrecemos la opción de reservación, con las siguientes opciones:
 			</p>
 			<p>
 				Nombre completo:
 			</p>
-			<input type="text" id="txtNombre" name="nombre">
+			<input type="text" id="txtNombre" name="nombre" required>
 			<br>
 			<p>
 				Fecha:
 			</p>
-			<input type="text" id="datepicker" name="fecha">
+			<input type="text" id="datepicker" name="fecha" required>
 			<br>
 			<p>
 				Hora:
@@ -52,8 +52,8 @@
 				Número de personas:
 			</p>
 
-			<input type="number" min="1" />
-			<form action="">
+			<input id="txtNumero"type="number" min="1" required />
+		
 				<table>
 					<tr>
 						<th>Platillo</th>
@@ -125,10 +125,10 @@
 </textarea>
 				<br>
 
-				<input type="button" value="Enviar reservación">
+				<input id="submit" type="submit" value="Enviar reservación" >
 
 			</form>
-		
+		<p id="status"> </p>
 </div>
 	<footer>
 Restaurante La Casa de las Delicias &copy 2015 

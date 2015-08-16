@@ -26,24 +26,21 @@ a {
 	width: 70%;
 	height: 100vh;
 }
+
 #mainReservacion{
 	margin: 0 auto;
 	width: 70%;
 	height:1000px;
 }
-#mainImage {
+#mainImage, #restImage {
 	width: 100%;
 	height: auto;
--webkit-border-top-left-radius: 10px;
--webkit-border-top-right-radius: 10px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-topright: 10px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 	border: 0px solid #000000;
 	margin-top:30px;
-	  
-}
+  }
 
 #mainReservacion p, #mainContacto p {
 	text-align: left;
@@ -103,28 +100,24 @@ input, textarea {
 	border: 0px solid #000000;
 	padding: 3px;
 }
-
-
-
-
 #txtNombre {
 	width: 200px;
 }
 td {
 	width: 200px;
 }
+th{
+	text-align: left;
+}
 #cuadro {
 	background-color: white;
-	opacity: 0.25;
+	opacity: 0.35;
 	color: red;
-	width: 98%;
+	width: 100%;
 	height: auto;
--webkit-border-bottom-right-radius: 10px;
--webkit-border-bottom-left-radius: 10px;
--moz-border-radius-bottomright: 10px;
--moz-border-radius-bottomleft: 10px;
-border-bottom-right-radius: 10px;
-border-bottom-left-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 	border: 0px solid #000000;
 	padding: 1%;
 	    box-shadow: 10px 10px 5px #560802;
@@ -145,7 +138,7 @@ border-bottom-left-radius: 10px;
 	font-size:20px;
 }
 iframe{
-	width: 50%;
+	width: 100%;
 	height: auto;
 }
 #nombreMenu, h2{
@@ -167,6 +160,22 @@ footer{
 	#menufooter{
 		margin-top: 1900px;
 	}
+	#indexFooter,#restFooter{
+		margin-top:200px;
+	}
+	#restFooter{
+		margin-top:600px;
+	}
+	.columnas{
+		width:33%;
+		height: auto;
+		float: left;
+	}
+	.columnas p{
+		text-align: left;
+		font-size: 18px;
+	}
+
 /* Media Queries
  --------------------------------------------- */
 
@@ -180,6 +189,12 @@ footer{
 	}
 	#mainContent {
 		height: 100vh;
+	}
+	#indexBody{
+		height: 100%;
+	}
+	#restFooter{
+		margin-top:200px;
 	}
 }
 
@@ -199,6 +214,15 @@ footer{
 	#mainContent {
 		height: 100vh;
 	}
+		.columnas{
+		width:100%;
+		height: 200px;
+		float: left;
+	}
+	#restFooter{
+		margin-top:650px;
+	}
+	
 	}
 @media all and (max-width: 480px) {
 	#mainContent {
@@ -213,5 +237,9 @@ footer{
 	#menufooter{
 		margin-top: 2200px;
 	}
+	#restFooter{
+		margin-top:750px;
+	}
+	
 }
 

@@ -20,10 +20,12 @@ function addNums(){
 	if(answer == ""){
 
 		alert("Por favor ingrese el resultado de la suma");
+		document.getElementById("status").value = "";
 
 	}else if(answer != sum){
 
 		alert("Resultado de la suma incorrecto");
+		document.getElementById("status").value = "";
 
 	}else{
 

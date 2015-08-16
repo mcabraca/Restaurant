@@ -3,7 +3,7 @@ $(function() {
     
    $('#timepicker').timepicker({
     'disableTimeRanges': [
-        ['12am', '10am'],
+        ['12am', '11am'],
         ['9pm', '11:31pm']
     ]
 });
@@ -24,9 +24,34 @@ $(function() {
         nextCell.val("");
     }
 });
+$('#submit').click(function(e) {
+        var isValid = true;
+        $('input[type="text"], #txtNumero').each(function() {
+            if ($.trim($(this).val()) == '') {
+                isValid = false;
+                $(this).css({
+                    "border": "1px solid red",
+                    "background": "#FFCECE"
+                });
+            }
+            else {
+                $(this).css({
+                    "border": "",
+                    "background": ""
+                });
+            }
+        });
+        if (isValid == false) 
+            e.preventDefault();
+        else 
+            alert('Su reservación ha sido registrada. Muchas gracias por su interés');
+    });
+
+
 
 
 });
+
 
 
   
