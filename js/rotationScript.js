@@ -3,7 +3,7 @@ $(function() {
     var imageDir = 'img/';                     
     var delayInSeconds = 5;                            // set number of seconds delay
     // list image names
-    var images = ['01.jpg', '03.jpg'];
+    var images = ['01.jpg', '02.jpg','03.jpg'];
 
     var num = 0;
     var changeImage = function() {
