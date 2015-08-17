@@ -158,7 +158,7 @@ footer{
 	background-color: #f16f01;
 	}
 	#menufooter{
-		margin-top: 1900px;
+		margin-top: 2400px;
 	}
 	#indexFooter,#restFooter{
 		margin-top:200px;
@@ -178,7 +178,12 @@ footer{
 
 /* Media Queries
  --------------------------------------------- */
+@media all and (max-width: 1366px) {
+#menufooter{
+		margin-top: 1800px;
+	}
 
+}
 @media all and (max-width: 920px) {
 	.menuImg, .textoComida {
 		height: auto;
@@ -195,6 +200,9 @@ footer{
 	}
 	#restFooter{
 		margin-top:200px;
+	}
+		#menufooter{
+		margin-top: 0px;
 	}
 }
 
@@ -235,7 +243,7 @@ footer{
 		height: 650px;
 	}
 	#menufooter{
-		margin-top: 2200px;
+		margin-top: 1600px;
 	}
 	#restFooter{
 		margin-top:750px;
